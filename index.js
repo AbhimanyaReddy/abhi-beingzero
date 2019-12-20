@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 7000
+const port = process.env.PORT || 3000
 app.use(express.static('frontend'))
 app.get('/', (req, res) => res.sendFile("C:/Users/abhim/Desktop/newone/frontend/HTML/home.html"))
 var student = {}
